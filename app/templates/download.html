@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Скачивание{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <h1>Скачивание каталога</h1>
+  <p class="muted">Данные берутся с внешнего API порциями с учётом лимитов запросов.</p>
+
+  <div class="toolbar">
+    <button type="button" id="btn-download" class="btn primary">Скачать данные</button>
+    <button type="button" id="btn-stop" class="btn">Стоп</button>
+  </div>
+  
+  <dl class="status-grid" id="status-panel">
+    <div>
+      <dt>Статус</dt>
+      <dd id="st-status">—</dd>
+    </div>
+    <div>
+      <dt>Старт (НСК)</dt>
+      <dd id="st-started">—</dd>
+    </div>
+    <div>
+      <dt>Прогресс</dt>
+      <dd id="st-message">—</dd>
+    </div>
+    <div>
+      <dt>N / M / batch</dt>
+      <dd id="st-counts">—</dd>
+    </div>
+    <div class="full">
+      <dt>Детали</dt>
+      <dd id="st-error">—</dd>
+    </div>
+  </dl>
+</section>
+{% endblock %}
+
+
+
+

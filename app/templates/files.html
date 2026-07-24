@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Скачанные файлы{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <h1>Скачанные файлы</h1>
+  <p class="muted">Сортировка по времени скачивания (новые сверху). Время — Новосибирск.</p>
+
+  <div class="toolbar">
+    <label><input type="checkbox" id="sel-page"> Все на странице</label>
+    <label><input type="checkbox" id="sel-all"> Вообще все</label>
+    <button type="button" id="btn-calc" class="btn primary">Произвести расчёты</button>
+    <span id="sel-hint" class="muted"></span>
+  </div>
+
+  <table class="files-table" id="files-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Имя файла</th>
+        <th>Скачан (НСК)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="pager" id="pager"></div>
+</section>
+
+<section class="panel" id="stats-panel" hidden>
+  <h2>Результаты расчётов</h2>
+  <h3>Общая статистика</h3>
+  <div id="stats-total"></div>
+  <h3>По файлам</h3>
+  <div id="stats-files"></div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/files.js"></script>
+{% endblock %}
+
+

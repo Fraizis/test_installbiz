@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Файлы{% endblock %}</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/download">Скачивание</a>
+      <a href="/files">Файлы</a>
+    </nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main> 
+  <script src="/static/download.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
+
+
+
