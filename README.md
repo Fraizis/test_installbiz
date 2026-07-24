@@ -26,17 +26,17 @@
 ## Структура
 
   app/
-- main.py           # приложение, страницы
-- config.py         # настройки
-- db.py             # SQLite
-- downloader.py     # клиент внешнего API
-- stats.py          # подсчёт цифр
-- models.py         # схемы ответов
-- routers/          # API download / files
-- templates/        # HTML
-- static/           # CSS, JS
-- data/               # app.db и скачанные файлы (создаётся автоматически)
-- scripts/smoke_download.py  # проверка downloader без UI
+  - main.py           # приложение, страницы
+  - config.py         # настройки
+  - db.py             # SQLite
+  - downloader.py     # клиент внешнего API
+  - stats.py          # подсчёт цифр
+  - models.py         # схемы ответов
+  - routers/          # API download / files
+  - templates/        # HTML
+  - static/           # CSS, JS
+  data/               # app.db и скачанные файлы (создаётся автоматически) 
+  scripts/smoke_download.py  # проверка downloader без UI
 
 ## API сервиса
 
