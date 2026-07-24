@@ -35,7 +35,9 @@
   - routers/          # API download / files
   - templates/        # HTML
   - static/           # CSS, JS
+
   data/               # app.db и скачанные файлы (создаётся автоматически) 
+  
   scripts/smoke_download.py  # проверка downloader без UI
 
 ## API сервиса
